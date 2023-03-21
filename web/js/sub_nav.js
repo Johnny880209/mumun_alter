@@ -3,7 +3,6 @@ $(document).ready(function() {
     // 서브 네비게이션 드롭다운
 
     $('#mainNav>li').click(function(e){
-        e.preventDefault();
         $('#mainNav>li').removeClass('active');
         $(this).addClass('active');
         $('.dropdown').not($(this).find('.dropdown').css('display', 'flex')).css('display', 'none');
