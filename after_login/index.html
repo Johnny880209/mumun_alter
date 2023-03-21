@@ -1,0 +1,477 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="/web/css/reset.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="/web/css/main.css">
+
+    <title>알터</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="box">
+                <div class="header_left">
+                    <div class="logo">
+                        <a href="/"><h1><img src="/web/img/logo.svg" alt="알터"></h1></a>
+                    </div>
+    
+                    <nav>
+                        <ul id="mainNav">
+                            <li>
+                                <a href="#">단지고객</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">잠재고객</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">매물고객</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">네이버고객</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">면적정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">임대만기</a>
+                                        </li>
+                                    </ul>
+                                    <div class="search_box">
+                                        <div class="search">
+                                            <select>
+                                                <option>고객명</option>
+                                            </select>
+                                            <input type="text" placeholder="검색어 입력">
+                                        </div>
+                                        <a href='#prospectUser' rel="modal:open">잠재고객 등록하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">네이버매물</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">광고매물</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">나의매물</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">계정관리</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">결제관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">중개업소 정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">환경설정</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_right">
+                    <div class="search">
+                        <input type="text" placeholder="검색어를 입력하세요"/>
+                    </div>
+                    <div class="hr_content">
+                        <div class="cs_center">
+                            <button type="button" id="csBtn">
+                                <p>고객센터</p>
+                                <div class="cs_dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">고객센터</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <div class="notification">
+                            <button id="notiBtn"><img src="/web/img/bell.svg" alt="알터 알림"><span>3</span></button>
+                            <div class="noti_content">
+                                <div class="nc_top">
+                                    <div class="title">
+                                        <h3>알림 리스트</h3>
+                                        <button type="button">모두 읽음</button>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="green">등기알림</span>
+                                                <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="green">등기알림</span>
+                                                <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="red">거래알림</span>
+                                                <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nc_bottom">
+                                    <a href="#">전체보기 <img src="/web/img/noti_arrow.svg" alt="전체보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <button type="button" id="userMenuBtn">
+                                <div class="profile_thumb">
+                                    <img src="/web/img/profile.jpg" alt="유저 프로필">
+                                </div>
+                                <p>오민균</p>
+                                <img src="/web/img/profile_arrow.svg" alt="프로필 보기">
+                            </button>
+                            <div class="profile_content">
+                                <div class="user_profile">
+                                    <div class="profile_thumb">
+                                        <div class="thumb_img">
+                                            <div class="img_box">
+                                                <img src="/web/img/profile_m.jpg" alt="유저 프로필">
+                                            </div>
+                                            <div class="setting">
+                                                <a href="#"><img src="/web/img/setting_gear.svg" alt="프로필 설정"></a>
+                                            </div>
+                                        </div>
+                                        <p><b>오민균</b>님</p>
+                                    </div>
+                                    <a href="#">로그아웃</a>
+                                </div>
+
+                                <div class="info_box">
+                                    <div class="store_info">
+                                        <h4>중개업소 정보</h4>
+                                        <ul>
+                                            <li>
+                                                <b>상호</b>
+                                                <p>T중개업소0234</p>
+                                            </li>
+                                            <li>
+                                                <b>대표</b>
+                                                <p>오민균</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ticket_info">
+                                        <h4>이용권 정보</h4>
+                                        <ul>
+                                            <li>
+                                                <b>노출채널</b>
+                                                <p><img src="/web/img/profile_channel.png" alt="노출 채널명"></p>
+                                            </li>
+                                            <li>
+                                                <b>이용권</b>
+                                                <i>알파프리 12 이용중</i>
+                                            </li>
+                                            <li>
+                                                <b>충전금</b>
+                                                <i>20,000원</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile_bottom">
+                                    <a href="#">이용권</a>
+                                    <a href="#">쿠폰</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </header>
+
+        <section class="main_content">
+            <div class="container">
+                <section class="main_left">
+                    <div class="main_banner">
+                        <div class="text_box">
+                            <h2>매물관리의 시작, <b>알터</b></h2>
+                            <p>가입 문의 <b>1644-9828</b></p>
+                        </div>
+                        <div class="img_box">
+                            <img src="/web/img/main_banner_content.svg" alt="매물관리의 시작, 알터">
+                        </div>
+                    </div>
+
+
+                    <div class="ml_content_1">
+                        <div class="title">
+                            <h3>네이버매물 현황</h3>
+                            <a href="#">매물등록</a>
+                        </div>
+                        <div class="mlc_1_top">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="/web/img/mlc_1_icon_1.svg" alt="전체">
+                                        <p>10</p>
+                                        <span>전체</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/web/img/mlc_1_icon_2.svg" alt="광고중">
+                                        <p>4</p>
+                                        <span>광고중</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/web/img/mlc_1_icon_3.svg" alt="종료예정">
+                                        <p class="red">2</p>
+                                        <span>종료 예정</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/web/img/mlc_1_icon_4.svg" alt="광고 검증 실패">
+                                        <p class="orange">1</p>
+                                        <span>광고 검증 실패</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mlc_1_bottom">
+                            <ul>
+                                <li>
+                                    <p>동일주소 거래완료</p>
+                                    <a href="#">0</a>
+                                </li>
+                                <li class="border"></li>
+                                <li>
+                                    <p>신고매물 미처리</p>
+                                    <a href="#">0</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ml_content_2">
+                        <div class="title">
+                            <h3>공지사항</h3>
+                            <a href="#">더보기 <img src="/web/img/more_icon.svg" alt="더보기"></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="category"><a href="#">프로모션</a></td>
+                                <td class="subject"><a href="#">인터넷 등기소 점검 안내 (11/12~13)</a></td>
+                            </tr>
+                            <tr>
+                                <td class="category"><a href="#">공지</a></td>
+                                <td class="subject"><a href="#">KISO 부동산 매물검증센터 오류로 인해 긴급 검증센터 사이트 오픈을 하였습니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="category"><a href="#">프로모션</a></td>
+                                <td class="subject"><a href="#">12월 신용카드 무이자 안내</a></td>
+                            </tr>
+                            <tr>
+                                <td class="category"><a href="#">공지</a></td>
+                                <td class="subject"><a href="#">알터 12월 검증비용 안내</a></td>
+                            </tr>
+                            <tr>
+                                <td class="category"><a href="#">공지</a></td>
+                                <td class="subject"><a href="#">알터 사이트 리뉴얼 오픈</a></td>
+                            </tr>
+                            <tr>
+                                <td class="category"><a href="#">공지</a></td>
+                                <td class="subject"><a href="#">알터 사이트 리뉴얼 오픈</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+
+                <aside class="main_right">
+                    <div class="profile">
+                        <div class="user_profile">
+                            <div class="thumb_img">
+                                <div class="img_box">
+                                    <img src="/web/img/profile_l.jpg" alt="유저 프로필">
+                                </div>
+                                <div class="setting">
+                                    <a href="#"><img src="/web/img/setting_gear.svg" alt="프로필 설정"></a>
+                                </div>
+                            </div>
+                            <a href="#">로그아웃</a>
+                        </div>
+
+                        <div class="info_box">
+                            <div class="store_info">
+                                <h4>중개업소 정보</h4>
+                                <ul>
+                                    <li>
+                                        <b>상호</b>
+                                        <p>T중개업소0234</p>
+                                    </li>
+                                    <li>
+                                        <b>대표</b>
+                                        <p>오민균</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ticket_info">
+                                <h4>이용권 정보</h4>
+                                <ul>
+                                    <li>
+                                        <b>이용권</b>
+                                        <i>알파프리 12 이용중</i>
+                                    </li>
+                                    <li>
+                                        <b>충전금</b>
+                                        <i>20,000원</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="profile_bottom">
+                            <a href="#">이용권</a>
+                            <a href="#">쿠폰</a>
+                        </div>
+                    </div>
+
+                    <div class="notification">
+                        <ul>
+                            <li class="green">
+                                <a href="#">
+                                    <span>등기알림</span>
+                                    <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                </a>
+                            </li>
+                            <li class="red">
+                                <a href="#">
+                                    <span>거래알림</span>
+                                    <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                </a>
+                            </li>
+                            <li class="green">
+                                <a href="#">
+                                    <span>등기알림</span>
+                                    <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                        <div class="noti_bottom"><a href="#"><img src="/web/img/more_icon.svg" alt="더보기"><p>더보기</p></a></div>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <div class="page_up">
+            <button type="button" onclick='pageUp()'><img src="/web/img/page_up.svg" alt="상단으로 이동"></button>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="footer_top">
+                    <div class="fc_1 fc_sep">
+                        <p>고객센터 <img src="/web/img/footer_arrow.svg" alt="고객센터"></p>
+                        <div class="text_box">
+                            <h3>1644-9828</h3>
+                            <p><b>상담시간</b><i>평일 09:00 ~ 18:00</i></p>
+                            <p><b>휴무일</b><i>주말, 공휴일</i></p>
+                        </div>
+                    </div>
+
+                    <div class="fc_2 fc_sep">
+                        <p>검증서류접수 <img src="/web/img/footer_arrow.svg" alt="검증서류접수"></p>
+                        <div class="text_box">
+                            <p><b>FAX</b><i>02-6670-0220</i></p>
+                            <p><b>E-mail</b><a href="mailto:abcde@momoon.kr">abcde@momoon.kr</a></p>
+                        </div>
+                    </div>
+
+
+                    <div class="fc_3">
+                        <ul>
+                            <li>
+                                <p><b>・</b>현장확인 검증센터</p>
+                                <span>1600-5749</span>
+                            </li>
+                            <li>
+                                <p><b>・</b>부동산 매물클린관리센터</p>
+                                <span>1600-7186</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fc_4">
+                        <ul>
+                            <li><a href="#"><img src="/web/img/fc4_icon_1.svg" alt="알터"><p>알터</p></a></li>
+                            <li><a href="#"><img src="/web/img/fc4_icon_2.svg" alt="구글플레이"><p>구글플레이</p></a></li>
+                            <li><a href="#"><img src="/web/img/fc4_icon_3.svg" alt="부동산서식"><p>부동산서식</p></a></li>
+                            <li><a href="#"><img src="/web/img/fc4_icon_4.svg" alt="원격지원"><p>원격지원</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="fb_left">
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">서비스 이용약관</a></li>
+                                <li class="bold"><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">도움말</a></li>
+                                <li class="bold"><a href="#">온라인 문의</a></li>
+                            </ul>
+                        </div>
+                        <div class="text_box">
+                            <ul>
+                                <li>무문아이엔씨(주)</li>
+                                <li>대표이사 : 김 만</li>
+                                <li>사업자 번호 119-86-12482</li>
+                                <li>통신판매업 신고번호 2008-서울금천-0532호</li>
+                                <li>개인정보 관리책임자 : 이양우</li>
+                                <li>서울시 금천구 가산동 470-5번지 에이스테크노타워10차 1406호</li>
+                            </ul>
+                            <p>COPYRIGHT 2022 알터  ALL RIGHTS RESERVED.</p>
+                        </div>    
+                    </div>
+                    <div class="ft_logo">
+                        <h1><a href="#"><img src="/web/img/footer_logo.svg" alt="무문아이엔씨"></a></h1>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <!-- main_nav js -->
+    <script src="/web/js/main_nav.js"></script>
+    <!-- main js -->
+    <script src="/web/js/main.js"></script>
+</body>
+</html>

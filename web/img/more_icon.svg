@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="그룹_271" data-name="그룹 271" transform="translate(-1280 -1043)">
+    <g id="Boundary" transform="translate(1281 1044)" fill="none" stroke="#eee" stroke-width="1">
+      <rect width="20" height="20" stroke="none"/>
+      <rect x="-0.5" y="-0.5" width="21" height="21" fill="none"/>
+    </g>
+    <path id="_Color" data-name=" ↳Color" d="M10,5.714H5.714V10H4.286V5.714H0V4.286H4.286V0H5.714V4.286H10Z" transform="translate(1286 1049)" fill="#999"/>
+  </g>
+</svg>

@@ -1,0 +1,516 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery modal css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- context_menu css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="/web/css/reset.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="/web/css/main.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>알터</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="sub_layout">
+            <div class="box">
+                <div class="header_left">
+                    <div class="logo">
+                        <a href="/"><h1><img src="/web/img/logo.svg" alt="알터"></h1></a>
+                    </div>
+    
+                    <nav>
+                        <ul id="mainNav">
+                            <li>
+                                <a href="#">단지고객</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">잠재고객</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">매물고객</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">네이버고객</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">면적정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">임대만기</a>
+                                        </li>
+                                    </ul>
+                                    <div class="search_box">
+                                        <div class="search">
+                                            <select>
+                                                <option>고객명</option>
+                                            </select>
+                                            <input type="text" placeholder="검색어 입력">
+                                        </div>
+                                        <a href='#prospectUser' rel="modal:open">잠재고객 등록하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">네이버매물</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">광고매물</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">나의매물</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="active">
+                                <a href="#">계정관리</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">결제관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">중개업소 정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">환경설정</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_right">
+                    <div class="search">
+                        <input type="text" placeholder="검색어를 입력하세요"/>
+                    </div>
+                    <div class="hr_content">
+                        <div class="cs_center">
+                            <button type="button" id="csBtn">
+                                <p>고객센터</p>
+                                <div class="cs_dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">고객센터</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <div class="notification">
+                            <button id="notiBtn"><img src="/web/img/bell.svg" alt="알터 알림"><span>3</span></button>
+                            <div class="noti_content">
+                                <div class="nc_top">
+                                    <div class="title">
+                                        <h3>알림 리스트</h3>
+                                        <button type="button">모두 읽음</button>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="green">등기알림</span>
+                                                <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="green">등기알림</span>
+                                                <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="red">거래알림</span>
+                                                <p>청주테크노폴리스우방아이유쉘2단지 201동 901호 근저당권설정 조사대기접수증출력 (22.12.09)</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nc_bottom">
+                                    <a href="#">전체보기 <img src="/web/img/noti_arrow.svg" alt="전체보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <button type="button" id="userMenuBtn">
+                                <div class="profile_thumb">
+                                    <img src="/web/img/profile.jpg" alt="유저 프로필">
+                                </div>
+                                <p>오민균</p>
+                                <img src="/web/img/profile_arrow.svg" alt="프로필 보기">
+                            </button>
+                            <div class="profile_content">
+                                <div class="user_profile">
+                                    <div class="profile_thumb">
+                                        <div class="thumb_img">
+                                            <div class="img_box">
+                                                <img src="/web/img/profile_m.jpg" alt="유저 프로필">
+                                            </div>
+                                            <div class="setting">
+                                                <a href="#"><img src="/web/img/setting_gear.svg" alt="프로필 설정"></a>
+                                            </div>
+                                        </div>
+                                        <p><b>오민균</b>님</p>
+                                    </div>
+                                    <a href="#">로그아웃</a>
+                                </div>
+
+                                <div class="info_box">
+                                    <div class="store_info">
+                                        <h4>중개업소 정보</h4>
+                                        <ul>
+                                            <li>
+                                                <b>상호</b>
+                                                <p>T중개업소0234</p>
+                                            </li>
+                                            <li>
+                                                <b>대표</b>
+                                                <p>오민균</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ticket_info">
+                                        <h4>이용권 정보</h4>
+                                        <ul>
+                                            <li>
+                                                <b>노출채널</b>
+                                                <p><img src="/web/img/profile_channel.png" alt="노출 채널명"></p>
+                                            </li>
+                                            <li>
+                                                <b>이용권</b>
+                                                <i>알파프리 12 이용중</i>
+                                            </li>
+                                            <li>
+                                                <b>충전금</b>
+                                                <i>20,000원</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile_bottom">
+                                    <a href="#">이용권</a>
+                                    <a href="#">쿠폰</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </header>
+
+        <section class="sub_content">
+            <div class="container">
+                <div class="title">
+                    <a href="#"><h3>결제관리</h3></a>
+               </div>
+
+               <div class="content">
+                    <div class="top_nav">
+                        <ul>
+                            <li class="active"><a href="#">이용권</a></li>
+                            <li><a href="#">충전금</a></li>
+                            <li><a href="#">쿠폰</a></li>
+                            <li><a href="#">카드매출전표</a></li>
+                        </ul>
+                    </div>
+                    <div class="inner_content">
+                        <div class="item item_1">
+                            <div class="inner_title">
+                                <h4>이용권 정보</h4>
+                                <a href='#applyCoupon' rel="modal:open">이용권신청</a>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th width="15%">이용권종류</th>
+                                        <th width="15%">결제수단</th>
+                                        <th width="30%">이용기간</th>
+                                        <th width="10%">결제금액</th>
+                                        <th width="30%">관리</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="coupon">
+                                                <p>알터프리</p>
+                                                <b>12</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="card">
+                                                <p><img src="/web/img/kb_card.svg" alt="국민카드"> 국민카드</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="date">
+                                                <p>2022년 9월 22일 ~ 2023년 9월 21일</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price">
+                                                <b>99,000원</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="setting">
+                                                <a href="#" class="blue">재계약신청</a>
+                                                <a href="#">이용권해지</a>
+                                                <a href="#">결제관리</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="item item_2">
+                            <div class="inner_title">
+                                <h4>결제내역</h4>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th width="15%">이용권종류</th>
+                                        <th width="15%">결제수단</th>
+                                        <th width="30%">결제일/해지일</th>
+                                        <th width="10%">결제금액</th>
+                                        <th width="30%">비고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="text">
+                                                <p>알터프리 12</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="card">
+                                                <p><img src="/web/img/kb_card.svg" alt="국민카드"> 국민카드</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text">
+                                                <p>2022/09/22 12:42:50</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price">
+                                                <b>99,000원</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text">
+                                                <p>알터프리12 결제</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text">
+                                                <p>알터프리 6</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="card">
+                                                <p><img src="/web/img/kb_card.svg" alt="국민카드"> 국민카드</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text">
+                                                <p>2022/08/22 12:42:50</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price">
+                                                <b>99,000원</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text">
+                                                <p>이용권 해지 (부분환불)</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pagination">
+                            <ul>
+                                <li class="button"><a href="#"><img src="/web/img/pagi_prev_1.svg"></a></li>
+                                <li class="button"><a href="#"><img src="/web/img/pagi_prev_2.svg"></a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#" class="active">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li class="button"><a href="#"><img src="/web/img/pagi_next_1.svg"></a></li>
+                                <li class="button"><a href="#"><img src="/web/img/pagi_next_2.svg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="apply_coupon" id="applyCoupon">
+            <div class="title">
+                <h3>이용권 신청</h3>
+                <a href="#" rel="modal:close"><img src="/web/img/close_icon.svg" alt="닫기"></a>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>
+                        <div class="round_radio_box">
+                            <input type="radio" name="coupon" id="coupon1" checked/>
+                            <label for="coupon1">
+                                <div class="top">
+                                    <h4>알터프리 3</h4>
+                                    <b>3개월</b>
+                                </div>
+                                <span>22년 06월 22일 ~ 22년 09월 21일</span>
+                                <p>33,000원</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="round_radio_box">
+                            <input type="radio" id="coupon2" name="coupon"/>
+                            <label for="coupon2">
+                                <div class="top">
+                                    <h4>알터프리 6</h4>
+                                    <b>6개월</b>
+                                </div>
+                                <span>22년 06월 22일 ~ 22년 09월 21일</span>
+                                <p>55,000원</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="round_radio_box">
+                            <input type="radio" id="coupon3" name="coupon"/>
+                            <label  for="coupon3">
+                                <div class="top">
+                                    <h4>알터프리 12</h4>
+                                    <b>12개월</b>
+                                </div>
+                                <span>22년 06월 22일 ~ 22년 09월 21일</span>
+                                <p>99,000원</p>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_box">
+                <button type="button" class="submit">신청하기</button>
+            </div>
+        </div>
+
+        <div class="page_up">
+            <button type="button" onclick='pageUp()'><img src="/web/img/page_up.svg" alt="상단으로 이동"></button>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="footer_top">
+                    <div class="fc_1 fc_sep">
+                        <p>고객센터 <img src="/web/img/footer_arrow.svg" alt="고객센터"></p>
+                        <div class="text_box">
+                            <h3>1644-9828</h3>
+                            <p><b>상담시간</b><i>평일 09:00 ~ 18:00</i></p>
+                            <p><b>휴무일</b><i>주말, 공휴일</i></p>
+                        </div>
+                    </div>
+
+                    <div class="fc_2 fc_sep">
+                        <p>검증서류접수 <img src="/web/img/footer_arrow.svg" alt="검증서류접수"></p>
+                        <div class="text_box">
+                            <p><b>FAX</b><i>02-6670-0220</i></p>
+                            <p><b>E-mail</b><a href="mailto:abcde@momoon.kr">abcde@momoon.kr</a></p>
+                        </div>
+                    </div>
+
+
+                    <div class="fc_3">
+                        <ul>
+                            <li>
+                                <p><b>・</b>현장확인 검증센터</p>
+                                <span>1600-5749</span>
+                            </li>
+                            <li>
+                                <p><b>・</b>부동산 매물클린관리센터</p>
+                                <span>1600-7186</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fc_4">
+                        <ul>
+                            <li><a href="#"><img src="/web/img/fc4_icon_1.svg" alt="알터"><p>알터</p></a></li>
+                            <li><a href="#"><img src="/web/img/fc4_icon_2.svg" alt="구글플레이"><p>구글플레이</p></a></li>
+                            <li><a href="#"><img src="/web/img/fc4_icon_3.svg" alt="부동산서식"><p>부동산서식</p></a></li>
+                            <li><a href="#"><img src="/web/img/fc4_icon_4.svg" alt="원격지원"><p>원격지원</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="fb_left">
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">서비스 이용약관</a></li>
+                                <li class="bold"><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">도움말</a></li>
+                                <li class="bold"><a href="#">온라인 문의</a></li>
+                            </ul>
+                        </div>
+                        <div class="text_box">
+                            <ul>
+                                <li>무문아이엔씨(주)</li>
+                                <li>대표이사 : 김 만</li>
+                                <li>사업자 번호 119-86-12482</li>
+                                <li>통신판매업 신고번호 2008-서울금천-0532호</li>
+                                <li>개인정보 관리책임자 : 이양우</li>
+                                <li>서울시 금천구 가산동 470-5번지 에이스테크노타워10차 1406호</li>
+                            </ul>
+                            <p>COPYRIGHT 2022 알터  ALL RIGHTS RESERVED.</p>
+                        </div>    
+                    </div>
+                    <div class="ft_logo">
+                        <h1><a href="#"><img src="/web/img/footer_logo.svg" alt="무문아이엔씨"></a></h1>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <!-- jquery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!-- context_menu js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>
+    <!-- sub_nav js -->
+    <script src="/web/js/sub_nav.js"></script>
+    <!-- main js -->
+    <script src="/web/js/main.js"></script>
+</body>
+</html>

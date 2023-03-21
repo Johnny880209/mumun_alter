@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="그룹_754" data-name="그룹 754" transform="translate(-559 -187)">
+    <g id="타원_16" data-name="타원 16" transform="translate(559 187)" fill="#fff" stroke="#eee" stroke-width="1">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.5" fill="none"/>
+    </g>
+    <g id="그룹_753" data-name="그룹 753" transform="translate(273 -428)">
+      <rect id="Boundary" width="24" height="24" transform="translate(289 618)" fill="none"/>
+      <path id="_Color" data-name=" ↳Color" d="M7.4,1.41,5.992,0,0,6l5.992,6L7.4,10.59,2.826,6Z" transform="translate(297 624)" fill="#999"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="그룹_1067" data-name="그룹 1067" transform="translate(-1297 -1253)">
+    <g id="그룹_223" data-name="그룹 223" transform="translate(1297 1253)">
+      <g id="사각형_7" data-name="사각형 7" fill="#fff" stroke="#eee" stroke-width="1">
+        <rect width="40" height="40" rx="20" stroke="none"/>
+        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="none"/>
+      </g>
+    </g>
+    <path id="_Color" data-name=" ↳Color" d="M17.863,20H6.305a1.954,1.954,0,0,1-2.1-1.753V5.979a1.954,1.954,0,0,1,2.1-1.753H17.863a1.953,1.953,0,0,1,2.1,1.753V18.247A1.953,1.953,0,0,1,17.863,20ZM6.305,6.339V18.252H17.863V6.339ZM2.1,16.905H0V2.113A2.11,2.11,0,0,1,2.1,0H14.711V2.113H2.1V16.905Z" transform="translate(1306 1263)" fill="#0079f2"/>
+  </g>
+</svg>

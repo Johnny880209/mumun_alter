@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="그룹_192" data-name="그룹 192" transform="translate(-518 -454)">
+    <g id="사각형_110" data-name="사각형 110" transform="translate(518 454)" fill="#fff" stroke="#0079f2" stroke-width="1">
+      <rect width="32" height="32" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="31" height="31" rx="4.5" fill="none"/>
+    </g>
+    <g id="그룹_193" data-name="그룹 193" transform="translate(2)">
+      <g id="그룹_191" data-name="그룹 191" transform="translate(-323.643 310.907)">
+        <line id="선_181" data-name="선 181" x2="2.129" transform="translate(849.643 155.093)" fill="none" stroke="#0079f2" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_182" data-name="선 182" x2="9.206" transform="translate(852.9 155.093)" fill="none" stroke="#0079f2" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_183" data-name="선 183" x2="2.129" transform="translate(849.643 159.351)" fill="none" stroke="#0079f2" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_184" data-name="선 184" x2="9.206" transform="translate(852.9 159.351)" fill="none" stroke="#0079f2" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_185" data-name="선 185" x2="2.129" transform="translate(849.643 163.608)" fill="none" stroke="#0079f2" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_186" data-name="선 186" x2="9.206" transform="translate(852.9 163.608)" fill="none" stroke="#0079f2" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

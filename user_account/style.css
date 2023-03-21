@@ -1,0 +1,65 @@
+.sub_content {background: #F9F9F9; padding:200px 0px 100px;}
+
+.title {margin-bottom:20px;}
+.title a {display: inline-block;}
+.title a h3 {display: flex; align-items: center; font-size: 24px; font-weight: var(--semi_bold);}
+.title a img {margin-right:10px;}
+
+.content {background: #fff; border: 1px solid #eee; border-radius: 10px;}
+.content .top_nav {background: #F2F4F8;}
+.content .top_nav ul {display: flex;}
+.content .top_nav ul li {width:25%; text-align: center; background:#F2F4F8;}
+.content .top_nav ul li a {font-size:18px; font-weight: var(--medium); padding:20px 0px; color:#838EA2; display: block;}
+.content .top_nav ul .active {background: #fff; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.content .top_nav ul .active a {color:var(--main_color);}
+.content .inner_content {padding:50px;}
+.content .inner_content .inner_title {display: flex; align-items: center; justify-content: space-between; margin-bottom:20px;}
+.content .inner_content .inner_title h4 {font-size:24px; font-weight: var(--medium);}
+.content .inner_content .inner_title a {color:#fff; background: var(--main_color); font-size:16px; font-weight: var(--semi_bold); padding:10px 20px; border-radius: 30px;}
+.content .inner_content .item_1 {margin-bottom:60px;}
+.content .inner_content .item_2 {margin-bottom:20px;}
+.content .inner_content .item table {width:100%;}
+.content .inner_content .item table thead th {background: #eee; font-size: 12px; text-align: center; font-weight: var(--medium); padding:10px 0px;}
+.content .inner_content .item table tbody td {border-bottom:1px solid #eee; text-align: center; padding:15px 0px; vertical-align: middle;}
+.content .inner_content .item table tbody td .coupon {width:100px; height:65px; margin: 0 auto; padding:10px 13px; box-sizing: border-box; border-radius: 10px; background: linear-gradient(90deg, rgba(0,121,242,1) 0%, rgba(56,156,255,1) 100%); text-align: left; display: flex; flex-direction:column;justify-content:center;}
+.content .inner_content .item table tbody td .coupon p {font-size:18px; font-weight: var(--bold); color:#fff; margin-bottom:5px;}
+.content .inner_content .item table tbody td .coupon b {font-size:18px; font-weight: var(--bold); color:#FFEB00;}
+.content .inner_content .item table tbody td .card {display: flex; justify-content:center;}
+.content .inner_content .item table tbody td .card p {display: flex; align-items: center; font-size:14px; font-weight: var(--medium);}
+.content .inner_content .item table tbody td .card p img {margin-right:5px;}
+.content .inner_content .item table tbody td .text p {font-size:16px;}
+.content .inner_content .item table tbody td .price b {font-size:16px; font-weight:var(--semi_bold); color:var(--main_color);}
+.content .inner_content .item table tbody td .setting a {display: inline-block; margin-right:5px; font-size:16px; font-weight: var(--medium); border:1px solid #999; border-radius: 30px; padding: 7px 11px;}
+.content .inner_content .item table tbody td .setting .blue {border-color: var(--main_color); color:var(--main_color);}
+.content .inner_content .item table tbody td .setting a:last-child {margin-right:0;}
+
+.pagination ul {display:flex; align-items: center; justify-content: center;}
+.pagination ul li {margin:0px 12px;}
+.pagination ul .button {margin:0px 5px;}
+.pagination ul li a {font-size:14px; display: block;}
+.pagination ul li .active {color:var(--main_color); text-decoration: underline;}
+
+.modal a.close-modal {display: none;}
+
+.apply_coupon {padding:50px;  box-shadow: none; max-width:1128px; height:650px; display: none;}
+.apply_coupon .title {display:flex; justify-content: space-between; align-items: center; padding-bottom:20px; margin-bottom:30px; border-bottom:1px solid #ddd;}
+.apply_coupon .title h3 {font-size:24px; font-weight: var(--medium);}
+
+.apply_coupon .box {margin-bottom:100px;}
+.apply_coupon .box ul {display:flex; justify-content: space-between;}
+.apply_coupon .box ul li input {display: none;}
+.apply_coupon .box ul li label {width:329px; padding:50px 30px; border:1px solid #eee; border-radius: 10px; display: block; cursor: pointer; box-sizing: border-box;}
+.apply_coupon .box ul li label .top {display: flex; align-items: center; justify-content: space-between; margin-bottom:86px;}
+.apply_coupon .box ul li label .top h4 {font-size:30px; font-weight: var(--bold); color:#222;}
+.apply_coupon .box ul li label .top b {font-size:18px; color:var(--red); padding:8px 10px; border-radius: 5px; font-weight:var(--semi_bold); border:1px solid var(--red); background: #fff;}
+.apply_coupon .box ul li label span {font-size:18px; display: block; margin-bottom:18px;}
+.apply_coupon .box ul li label p {font-size:30px; color: var(--main_color); font-weight: var(--bold);}
+
+.apply_coupon .box ul li input[type=radio]:checked + label {background: var(--main_color); border:0;}
+.apply_coupon .box ul li input[type=radio]:checked + label .top h4 {color:#fff;}
+.apply_coupon .box ul li input[type=radio]:checked + label span {color:#fff;}
+.apply_coupon .box ul li input[type=radio]:checked + label p {color:#fff;}
+
+.apply_coupon .btn_box {display: flex; align-items: center; justify-content: center;}
+.apply_coupon .btn_box button {font-size:18px; padding:10px 25px; border: 1px solid #ddd; border-radius: 30px; font-weight: var(--semi_bold); color:#666; background: #fff;}
+.apply_coupon .btn_box .submit {background: var(--main_color); border:0; color:#fff; margin-right:10px;}

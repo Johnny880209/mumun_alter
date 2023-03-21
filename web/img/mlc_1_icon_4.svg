@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="70.714" viewBox="0 0 72 70.714">
+  <g id="그룹_1243" data-name="그룹 1243" transform="translate(-1018 -467)">
+    <rect id="사각형_139" data-name="사각형 139" width="72" height="70.714" rx="35" transform="translate(1018 467)" fill="#fff"/>
+    <g id="그룹_121" data-name="그룹 121" transform="translate(146.938 343.813)">
+      <path id="패스_139" data-name="패스 139" d="M906.732,174.364H888.155l9.289-16.088,9.289-16.089,9.289,16.088,9.289,16.088Z" transform="translate(-0.022)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="그룹_120" data-name="그룹 120" transform="translate(889.061 142.308)">
+        <path id="패스_140" data-name="패스 140" d="M912.4,175.02H923.59a1.683,1.683,0,0,0,1.458-2.526l-16.923-29.309a1.683,1.683,0,0,0-2.914,0l-16.922,29.309a1.684,1.684,0,0,0,1.461,2.526h11.189" transform="translate(-888.061 -142.345)" fill="#fff" stroke="#444" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <g id="그룹_119" data-name="그룹 119" transform="translate(15.24 9.543)">
+          <g id="그룹_118" data-name="그룹 118">
+            <path id="패스_141" data-name="패스 141" d="M911.421,169.811h0a2.174,2.174,0,0,1-2.156-1.9l-1.184-9.255a3.369,3.369,0,0,1,1.872-3.459h0a3.366,3.366,0,0,1,2.937,0h0a3.369,3.369,0,0,1,1.872,3.459l-1.185,9.255A2.174,2.174,0,0,1,911.421,169.811Z" transform="translate(-908.053 -154.863)" fill="#0079f2"/>
+          </g>
+          <circle id="타원_5" data-name="타원 5" cx="2.621" cy="2.621" r="2.621" transform="translate(0.747 17.994)" fill="#0079f2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
