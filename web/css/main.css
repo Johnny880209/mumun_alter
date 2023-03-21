@@ -35,7 +35,7 @@ body {font-family: 'Pretendard', 'Noto Sans KR', sans-serif; color:#222;}
 #main {width:100%; display: flex;}
 #main .banner_box {width:1182px; height: 1080px; background: url(/web/img/main_banner_bg.jpg) no-repeat center / cover;}
 #main .banner_box .text_box {padding:150px 0px 0px 120px;}
-#main .banner_box .text_box h2 {font-size:60px; color:#444; margin-bottom:20px; font-weight: var(--bold);}
+#main .banner_box .text_box h2 {font-size:60px; color:#444; margin-bottom:20px; font-weight: var(--bold); line-height: 1.5;}
 #main .banner_box .text_box h2 b {color:var(--main_color);}
 #main .banner_box .text_box p {font-size:30px; color:#666; font-weight: var(--light);}
 
